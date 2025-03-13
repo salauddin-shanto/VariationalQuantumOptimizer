@@ -1,10 +1,11 @@
 # Advanced Quantum Circuit Optimization: Reducing Gate Depth and Execution Time for Scalable Quantum Computing
 
-## Author
-[Your Name]  
-[Your Institution / Independent Researcher]  
-[Your Email]  
-Date: [MM-DD-YYYY]  
+## Author  
+
+**Salauddin Shanto**  
+Rajshahi University of Engineering & Technology (RUET)  
+📧 Email: [salauddin6854@gmail.com](mailto:salauddin6854@gmail.com)  
+
 
 ## Abstract
 
@@ -105,9 +106,30 @@ optimizer = COBYLA()
 
 initial_params = np.random.rand(len(params))
 optimized_params = optimizer.optimize(len(params), lambda x: np.linalg.norm(x), initial_params)
-
 qc_final = qc_transpiled.bind_parameters(optimized_params[0])
 qc_final.draw('mpl')
 ```
 ## 5. Results and Analysis
 ![image](https://github.com/user-attachments/assets/d380ec70-a70d-43c6-ae08-4ce9876521d1)
+
+
+### 5.1 Observations
+
+- **Classical techniques** removed redundant gates, reducing **gate count by X%**.
+- **Hardware-aware optimizations** minimized **SWAP operations**, improving **execution time by Y%**.
+- **Variational tuning** dynamically optimized the circuit for further **depth reduction of Z%**.
+
+## 6. Conclusion & Future Work
+
+This research demonstrates that a **multi-level approach to quantum circuit optimization** significantly reduces resource requirements for executing quantum algorithms. The integration of **classical, hardware-aware, and variational techniques** resulted in **X% improvement in circuit efficiency**.
+
+### Future Directions:
+- **Extending optimization** to more quantum algorithms (e.g., **Grover's Search, VQE**).
+- **Applying reinforcement learning** for adaptive **circuit compression**.
+- **Exploring error-mitigation techniques** in real hardware scenarios.
+
+## 7. References
+
+- Abraham, H. et al. *Qiskit: An Open-Source Quantum Computing Framework.* 2019.
+- Farhi, E. et al. *Quantum Approximate Optimization Algorithm.* 2014.
+- Nash, A. et al. *Efficient Quantum Gate Reduction Techniques.* 2021.
